@@ -67,19 +67,8 @@
 <?php get_search_form(); ?>
 <?php } ?>
     </div>
-    </div>
-<?php if ( !is_page_template('template-landing-page.php') ) { ?>
-    <div class="menu-box-wrapper">
-    <div class="menu-box">
-      <a class="link-home" href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="icon_house" aria-hidden="true"></i></a>
-<?php wp_nav_menu( array( 'menu_id'=>'nav', 'theme_location'=>'main-navigation' ) ); ?>
-    </div>
-    </div>
-<?php } ?>    
+    </div>    
 <?php if ( is_home() || is_front_page() ) { ?>
-<?php if ( get_header_image() != '' ) { ?>    
-    <div class="header-image"><img src="<?php header_image(); ?>" alt="<?php bloginfo( 'name' ); ?>" /></div>
-<?php } ?>
 <?php } else { ?>
 <?php if ( get_header_image() != '' && $happenstance_options_db['happenstance_display_header_image'] != 'Only on Homepage' ) { ?>
   <div class="header-image">
@@ -90,3 +79,4 @@
   <div id="wrapper-content">
   <div id="main-content">
   <div id="content">
+      
