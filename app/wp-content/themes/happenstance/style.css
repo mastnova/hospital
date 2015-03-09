@@ -331,11 +331,14 @@ body .pattern {
 
 .header-content {
   float: left;
-  padding: 35px 28px;
+  padding: 35px 28px 35px 247px;
   position: relative; 
-  width: 1114px;
-    background: url(images/banner.jpg) no-repeat;
+  width: 1170px;
+    background: url('images/header-bg.jpg') no-repeat;
     background-size: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e6e6e6;
+    
 }
 .site-title { 
   font-family: Oswald, Arial, Helvetica, sans-serif;
@@ -399,11 +402,12 @@ body .pattern {
 /* header menu */
 .menu-box-wrapper {
   background: #333333;
-  border-bottom: 2px solid #535353;
+  border-right: 1px solid #535353;
   position: relative;
-  width: 210px;
+  width: 220px;
   z-index: 500;   
     overflow: hidden;
+    border-left: 1px solid #535353;
 }
 .menu-box {
   float: left;
@@ -431,7 +435,6 @@ body .pattern {
   z-index: 100;
 }
 .menu-box a {
-	border-right: 1px solid #535353;
   color: white;
   display: block;
 	font-family: Oswald, Arial, Helvetica, sans-serif;
@@ -461,7 +464,6 @@ body .pattern {
           transition: background-color 1s ease;
 }
 .menu-box ul li {
-  height: 44px;
   line-height: 44px;
 	margin: 0;
 	padding: 0;
@@ -471,9 +473,8 @@ body .pattern {
 .menu-box ul ul {
 	background: #ededed;
   border-top: 2px solid #169fe6;
-  display: none;
+  display: block;
 	padding: 0;
-  position: absolute;
 	top: 100%;
 	left: 0;
   z-index: 110;
@@ -496,15 +497,16 @@ body .pattern {
 	border-right: none;
   color: #333333 !important;
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: normal;
   height: auto;
   line-height: 39px;
   margin: 0;
   min-height: 39px;
-  padding: 0 0 0 19px;
+  padding: 0 0 0 8px;
   text-align: left;
   width: 230px;
+    text-transform: none;
 }
 .menu-box ul ul ul {
 	top: -2px;
@@ -1064,7 +1066,7 @@ body .pattern {
 } 
 
 #online-reg {
-    width: 210px;
+    width: 222px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -1139,7 +1141,7 @@ body .pattern {
   padding-right: 10px;                     
 }
 .footer-signature { 
-  background: #121212;
+  background: #333333;
   float: left;
   position: relative;
   width: 100%; 
@@ -1271,9 +1273,9 @@ input[type="reset"]:hover {
   width: 50%;
 }
 .header-content #searchform .searchform-wrapper {
-  margin-top: -15px;
+  margin-top: 39px;
   position: absolute;
-  right: 28px;
+  right: 8px;
   top: 50%;
   width: 200px;
   z-index: 100;        
